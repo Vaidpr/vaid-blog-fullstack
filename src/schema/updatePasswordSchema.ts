@@ -12,7 +12,7 @@ export const updatePasswordSchema = z.object({
   .regex(/^(?=.*[A-Z])(?=.*\d).*$/, {message: "Password must have one uppercase and digit"})
   .min(8, {message: "Password should be atleast 8 characters"}),
 
-  confimrPassword: z
+  confirmPassword: z
   .string({message: "Invalid Input"})
   .regex(/^(?=.*[A-Z])(?=.*\d).*$/, {message: "Password must have one uppercase and digit"})
   .min(8, {message: "Password should be atleast 8 characters"})
